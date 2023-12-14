@@ -1,0 +1,780 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css\Michigan.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Request Information</title>
+  </head>
+
+  <body>
+    <!-- nav -->
+    <header>
+      <!-- scroll to top -->
+      <div className="scroll-to-top">
+        <span class="btn btn-position btn-warning to-top d-flex justify-content-center align-items-end pb-0">Top</span>
+      </div>
+      <!--Top nav-->
+      <nav class="navbar navbar-expand-lg fixed-top py-0 py-lg-2 py-xl-3 navbar-dark bg-black">
+        <div class="container-xxl px-0 px-lg-2 justify-content-between">
+          <button class="navbar-toggler d-lg-none bg-warning text-black border-0 rounded-0 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list fs-1"></i>
+            <span class="d-block" style="font-size: 12px;">Menu</span>
+          </button>
+          
+          <!-- offcanvas -->
+          <div class="offcanvas offcanvas-start  d-lg-none" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
+            </div>
+            <div class="offcanvas-body p-0 d-flex flex-column">
+              <div class="p-3 bg-footergrey">
+                <div class="nav-search">
+                  <div class="input-group text-warning">
+                    <input type="text" class="form-control rounded-0" placeholder="Search" aria-label="Text input with dropdown button">
+                    <select id="search-options" class="search-options border-1">
+                      <option value="mtu">Michigan Tech</option>
+                      <option value="programs" data-action="">Programs</option>
+                      <option value="directory">Directory</option>
+                    </select>
+                    <button class="btn text-warning bg-black px-1 py-1 rounded-0" type="button">
+                      <i class="bi bi-search"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="give-apply d-flex text-center">
+                <a class="menu-link bg-black text-white py-2" href="#pricing">Give</a>
+                <a class="menu-link text-black bg-warning py-2" href="#pricing">Apply</a>
+              </div>
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header d-flex justify-content-between">
+                    <button class="accordion-button collapsed d-flex text-decoration-underline" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Undergraduate Admissions
+                      <!-- <i class="bi bi-caret-down"></i> -->
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse bg-footergrey text-white" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <ul class="p-0">
+                        <li><a class="dropdown-item py-2" href="#">Majors, Minors, and More</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Life at Tech</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Cost and Financial Aid</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Visit Campus</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Request Information</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Admitted Students</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Apply to Michigan Tech</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed d-flex text-decoration-underline" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Graduate Admissions
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse bg-footergrey text-white" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <ul class="p-0">
+                        <li><a class="dropdown-item py-2" href="#">Prospective Students</a></li>
+                        <li><a class="dropdown-item py-2" href="#">On-Campus Degrees and Certificates</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Online Degrees and Certificates</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Financial Information</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Request Information</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Admitted Students</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Apply to Michigan Tech</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed d-flex text-decoration-underline" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Academics
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse bg-footergrey text-white" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                    <ul class="p-0">
+                      <li><a class="dropdown-item py-2" href="#">Majors, Degrees, and Programs</a></li>
+                      <li><a class="dropdown-item py-2" href="#">Colleges and Departments</a></li>
+                      <li><a class="dropdown-item py-2" href="#">Accreditation</a></li>
+                      <li><a class="dropdown-item py-2" href="#">Pavlis Honors College</a></li>
+                      <li><a class="dropdown-item py-2" href="#">Library</a></li>
+                      <li><a class="dropdown-item py-2" href="#">Career Services</a></li>
+                      <li><a class="dropdown-item py-2" href="#">Enterprise Program</a></li>
+                    </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed d-flex text-decoration-underline" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                      Campus Life
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFour" class="accordion-collapse collapse bg-footergrey text-white" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <ul class="p-0">
+                        <li><a class="dropdown-item py-2" href="#">Majors, Degrees, and Programs</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Colleges and Departments</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Accreditation</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Pavlis Honors College</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Library</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Career Services</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Enterprise Program</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed d-flex text-decoration-underline" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                      Research
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFive" class="accordion-collapse collapse bg-footergrey text-white" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <ul class="p-0">
+                        <li><a class="dropdown-item py-2" href="#">Majors, Degrees, and Programs</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Colleges and Departments</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Accreditation</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Pavlis Honors College</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Library</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Career Services</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Enterprise Program</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed d-flex text-decoration-underline" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                      About
+                    </button>
+                  </h2>
+                  <div id="flush-collapseSix" class="accordion-collapse collapse bg-footergrey text-white" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <ul class="p-0">
+                        <li><a class="dropdown-item py-2" href="#">Majors, Degrees, and Programs</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Colleges and Departments</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Accreditation</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Pavlis Honors College</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Library</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Career Services</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Enterprise Program</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed d-flex bg-black text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                      Infor for...
+                    </button>
+                  </h2>
+                  <div id="flush-collapseSeven" class="accordion-collapse collapse bg-footergrey text-white" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <ul class="p-0">
+                        <li><a class="dropdown-item py-2" href="#">Majors, Degrees, and Programs</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Colleges and Departments</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Accreditation</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Pavlis Honors College</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Library</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Career Services</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Enterprise Program</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed d-flex bg-black text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                      Tech links
+                    </button>
+                  </h2>
+                  <div id="flush-collapseEight" class="accordion-collapse collapse bg-footergrey text-white" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <ul class="p-0">
+                        <li><a class="dropdown-item py-2" href="#">Majors, Degrees, and Programs</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Colleges and Departments</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Accreditation</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Pavlis Honors College</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Library</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Career Services</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Enterprise Program</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- nav content -->
+          <a href="#intro" class="michigan-nav-logo">
+            <img src="Images\michigan-tech-logo-full-yellow.svg" height="40.4" width="200">
+          </a>
+          <div class="d-lg-none d-flex"></div>
+          <div class="collapse navbar-collapse justify-content-end align-center" id="mainNav">
+            <ul class="navbar-nav" id="main-navcont">
+              <li class="nav-item d-flex">
+                <a class="nav-link" href="#topics">Students</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-nowrap" href="#reviews">Faculty/​Staff</a> 
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#reviews">Alumni</a> 
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Parents</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Industry</a>
+              </li>
+              <li class="nav-item dropdown">
+                <div class="btn dropdown-toggle text-warning tech-link" type="button" aria-expanded="false">
+                  Tech Links
+                </div>
+                <ul class="dropdown-menu drop-effect d-none p-0" style="max-width: 11rem;">
+                  <li><a class="dropdown-item text-black text-decoration-none text-wrap py-2" href="#">A to Z</a></li>
+                  <li><a class="dropdown-item text-black text-decoration-none text-wrap py-2" href="#">Banweb</a></li>
+                  <li><a class="dropdown-item text-black text-decoration-none text-wrap py-2" href="#">Campus Map</a></li>
+                  <li><a class="dropdown-item text-black text-decoration-none text-wrap py-2" href="#">Canvas</a></li>
+                  <li><a class="dropdown-item text-black text-decoration-none text-wrap py-2" href="#">Email</a></li>
+                  <li><a class="dropdown-item text-black text-decoration-none text-wrap py-2" href="#">MyMichiganTech</a></li>
+                  <li><a class="dropdown-item text-black text-decoration-none text-wrap py-2" href="#">Safety Data Sheets</a></li>
+                  <li><a class="dropdown-item text-black text-decoration-none text-wrap py-2" href="#">Website Settings</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- navsearch -->
+            <div class="nav-search">
+              <div class="input-group text-warning" id="search-cont">
+                Search
+                <input type="text" class="form-control rounded-0 py-0" aria-label="Text input with dropdown button">
+                <select id="search-options" class="search-options border-1">
+                  <option value="mtu">Michigan Tech</option>
+                  <option value="programs" data-action="">Programs</option>
+                  <option value="directory">Directory</option>
+                </select>
+                <button class="btn border-warning border-2 text-warning p-0 px-1 mx-1">
+                  Go
+                </button>
+                <button class="btn btn-warning rounded-0 py-0 px-1" type="button" onclick="hideSearch()">
+                  <object data="images\arrow-up-black.svg" class="icon" width="20" height="20"> </object>
+                </button>
+              </div>
+              <p class="d-inline-flex m-0 gap-1 text-btn">
+                <button class="btn rounded-0" id="hidebtn"  type="button" onclick="hideSearch()">
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Post nav -->
+      <div class="postnav d-none d-lg-flex pt-xl-3">
+        <div class="container-xxl p-0">
+          <ul class="d-flex justify-content-between m-0 ps-3">
+            <li class="dropdown">
+              <div class="btn test text-decoration-underline text-white py-3 dropdown-toggle" type="button"  aria-expanded="false">
+                Undergraduate Admissions
+              </div>
+              <ul class="dropdown-menu d-none p-0">
+                <li><a class="dropdown-item text-wrap py-2" href="#">Majors, Minors, and More</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Life at Tech</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Cost and Financial Aid</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Visit Campus</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Request Information</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Admitted Students</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Apply to Michigan Tech</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <div class="btn text-decoration-underline text-white py-3 test dropdown-toggle" type="button"  aria-expanded="false">
+                Graduate Admissions
+              </div>
+              <ul class="dropdown-menu d-none p-0">
+                <li><a class="dropdown-item text-wrap py-2" href="#">Prospective Students</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">On-Campus Degrees and Certificates</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Online Degrees and Certificates</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Financial Information</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Request Information</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Admitted Students</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Apply to Michigan Tech</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <div class="btn text-decoration-underline text-white py-3 test dropdown-toggle" type="button"  aria-expanded="false">
+                Academics
+              </div>
+              <ul class="dropdown-menu d-none p-0">
+                <li><a class="dropdown-item text-wrap py-2" href="#">Majors, Degrees, and Programs</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Colleges and Departments</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Accreditation</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Pavlis Honors College</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Library</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Career Services</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Enterprise Program</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <div class="btn text-decoration-underline text-white py-3 test dropdown-toggle" type="button"  aria-expanded="false">
+                Campus Life
+              </div>
+              <ul class="dropdown-menu d-none p-0">
+                <li><a class="dropdown-item text-wrap py-2" href="#">Athletics</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Arts and Entertainment</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Fitness and Recreation</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Housing and Dining</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Student Leadership and Involvement</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Student Mental Health and Well-being</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Webcams</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <div class="btn text-decoration-underline text-white py-3 test dropdown-toggle" type="button"  aria-expanded="false">
+                Research
+              </div>
+              <ul class="dropdown-menu d-none p-0">
+                <li><a class="dropdown-item text-wrap py-2" href="#">Research Areas</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Current Research Projects</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Centers and Institutes</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Research Integrity</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Research Magazine</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Undergraduate Research</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <div class="btn text-decoration-underline text-white py-3 test dropdown-toggle" type="button"  aria-expanded="false">
+                About
+              </div>
+              <ul class="dropdown-menu d-none dropdown-menu-end p-0">
+                <li><a class="dropdown-item text-wrap py-2" href="#">University Facts and Figures</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">History</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Traditions</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Michigan Tech Magazine</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Diversity and Inclusion</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">President's Council</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Strategic Plan</a></li>
+              </ul>
+            </li>
+            <a class="btn apply d-flex align-items-center bg-warning text-black rounded-0 px-5" href="#pricing">Apply</a>
+          </ul>
+        </div>
+      </div>  
+    </header>
+    <!-- site -->
+    <section class="background-smoke-gray">
+      <div class="container-xxl">
+        <div class="site-title-wrapper">
+          <div class="site-title pb-3 pt-4 pt-md-5 pt-lg-2">
+            <h1>
+              <a class="text-black fw-light fs-5" href="">Request Information</a>
+            </h1>
+            <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+              <ol class="breadcrumb m-0">
+                <li class="breadcrumb-item">
+                  <a href="/">
+                    Home
+                  </a>
+                </li>
+                <li class="breadcrumb-item active fw-bold text-black" aria-current="page">
+                  Request Information
+                </li>
+              </ol>
+            </div>
+          </div>   
+        </div>
+      </div>
+    </section>
+    <!-- site-image -->
+    <section>
+      <div>
+        <div class="site-image text-center">
+          <img src="images\request-banner1600.webp" alt="Site Image" height="129.6" width="100%" style="object-fit: cover;">
+          <div class="site-text text-white">
+            Be Ready for What Tomorrow Needs
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--about-->
+    <section>
+      <div class="full-width d-lg-flex align-items-center justify-content-center text-center mt-0">
+        <div class="p-3" style="max-width: 900px;">
+          <p class="center">
+            Michigan Technological University is a flagship STEM institution offering more than 120 academic degree programs for the needs of tomorrow. Use our interactive form to find the right program for you and request more information.
+          </p>
+          <div class="black-button d-block d-csm-inline-flex d-clg-flex justify-content-evenly pt-3">
+            <button type="button" class="btn btn-warning mb-5 mx-3 mx-cmd-5 py-3 fw-semibold" style="max-width: 17rem;">
+              Request Undergraduate Program Information
+            </button>
+            <button type="button" class="btn btn-warning mb-5 mx-3 mx-cmd-5 py-3 fw-semibold" style="max-width: 17rem;">
+              Request Graduate Program Information
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Tomorrow -->
+    <section>
+      <div class="section-fit background-smoke-gray">
+        <div class="grid-row px-2 px-clg-0">
+          <div class="text-center">
+            <h2 class="fw-semibold h2-like" style="font-size: 2.1rem;">
+              Tomorrow needs solutions. Tomorrow needs you.
+            </h2>
+            <p class="center">
+              Follow your passions. Find your calling and run with it.
+            </p>
+          </div>
+          <div class="row gx-0 py-3 my-3 mx-0">
+            <div class="col-12 col-cmd-6">
+              <div class="movie-wrapper mb-4">
+                <img src="images\maxresdefault (1).jpg" alt="Research that matters" class="card-img">
+                <button class="playhead bg-warning" aria-label="Watch H-STEM Engineering and Health Sciences Complex">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="55" width="40" stroke="#000" fill="#fff" stroke-width="0" viewBox="0 -10 120 155" role="presentation">
+                    <polygon points="25,0 100,40 25,80"></polygon>
+                    <text x="10" y="140" fill="#000" stroke="none" style="font-size: 34px; font-family: 'Open Sans', Arial, sans-serif; font-weight:600;">Watch</text>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="col-12 col-cmd-6 d-flex align-items-center pt-5 pt-md-0 ps-md-4 rank">
+              <ul class="p-0 m-0">
+                <li>
+                  <p class="fs-1 m-0">
+                    <span class="text-rankpurple" style="font-size: 2.4rem;"><strong>$67K</strong></span>&nbsp;median early career pay
+                  </p>
+                </li>
+                <li>
+                  <p class="fs-1 m-0">
+                    <span class="text-rankpurple" style="font-size: 2.4rem;">
+                      <strong>
+                        93%
+                      </strong>
+                    </span>
+                    job placement in 6 months
+                  </p>
+                </li>
+                <li>
+                  <p class="fs-1 m-0">
+                    <span class="text-rankpurple" style="font-size: 2.4rem;">
+                      <strong>
+                        400+
+                      </strong>
+                    </span>
+                    companies recruit on campus/year
+                  </p>
+                </li>
+              </ul>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ready -->
+    <section>
+      <div class="section-fit bg-warning">
+        <div class="grid-row">
+          <p class="text-center mb-0 fw-normal" style="font-size: 2.1rem; line-height: 3.1rem;">
+            Ready to take the next step?
+          </p>
+          <p class="text-center m-3 center">
+            Learn more about studying at Michigan's flagship technological university.
+          </p>
+          <ul class="d-block d-csm-flex row-cols-csm-2 row-cols-cmd-3 justify-content-center justify-content-cmd-evenly justify-content-xlg-around p-0 mx-4 mx-cmd-0 ms-xlg-5 mt-5 mt-csm-0 text-center flex-wrap">
+            <li>
+              <a class="text-decoration-none text-white bg-black my-4 rounded-2 fw-semibold yellow-button" href="Request Info.html">
+                Schedule a Visit
+              </a>
+            </li>
+            <li>
+              <a class="text-decoration-none text-white bg-black my-4 rounded-2 fw-semibold yellow-button" href="">
+                Apply Now
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- quote -->
+    <section>
+      <div class="section-fit pb-3">
+        <div class="grid-row px-2 px-clg-0">
+          <div class="row gx-0 pt-2 mx-0">
+            <div class="col-12 col-cmd-6 d-flex align-items-center pe-md-3">
+              <blockquote class="text-center fw-normal lh-base mb-md-0">
+                "Michigan Tech feels like a community: all of the students are close, and always willing to help each other out."
+                <span class="border-top border-bottom border-black d-block text-center fs-6 p-2 my-3 mx-lg-3" style="max-width:400px; font-family: 'Open Sans', sans-serif;">
+                  Jamie Spars, '21, pharmaceutical chemistry
+                </span>
+              </blockquote>
+            </div>   
+            <div class="col-12 col-cmd-6">
+              <img src="images\quote-card800.webp" alt="Research that matters" class="card-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="mtu-footer bg-black">
+      <div class="bg-footergrey">
+        <div class="full-width">
+          <ul class="row d-flex justify-content-center align-items-center m-0 p-0">
+            <li class="footer-button col-12 col-ccsm-6 col-clg-4 border border-black text-center py-3 px-4">
+              <a href="" class="text-warning">
+                Request Information
+              </a>
+            </li>
+            <li class="footer-button col-12 col-ccsm-6 col-clg-3 text-center py-3 px-5">
+              <a href="/visit/" class="text-warning">
+                Schedule a Visit
+              </a>
+            </li>
+            <li class="footer-button col-12 col-ccsm-6 col-clg-2 border border-black text-center py-3">
+              <a href="/giving/" class="text-warning">
+                Give
+              </a>
+            </li>
+            <li class="footer-button-apply col-12 col-ccsm-6 col-clg-3 border border-warning bg-warning text-center py-3">
+              <a href="/apply/" class="text-black">
+                Apply
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="full-width mb-0">
+        <!-- footer-menu -->
+        <div class="footer row d-flex p-0 mx-0 mt-5 mb-3">
+          <div class="col-12 col-csm-6 col-clg-3 d-flex flex-column ps-xl-0">
+            <div>
+              <h2>
+                Admissions
+              </h2>
+            </div>
+            <ul class="no-bullet ps-0">
+              <li><a href="/admissions/">Undergraduate Admissions</a></li>
+              <li><a href="/gradschool/">Graduate Admissions</a></li>
+              <li><a href="/globalcampus/">Global Campus</a></li>
+              <li><a aria-label="Request Information from Michigan Tech" href="">Request Information</a></li>
+              <li><a aria-label="Schedule a Visit to Michigan Tech" href="/visit/">Schedule a Visit</a></li>
+              <li><a aria-label="Apply to Michigan Tech" href="/apply/">Apply</a></li>
+              <li><a aria-label="Virtual Tours of Michigan Tech" href="/virtual-tour/">Virtual Tours</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-csm-6 col-clg-3 d-flex flex-column">
+            <div class="mt-5 mt-csm-0">
+              <h2>
+                Study and Live
+              </h2>
+            </div>
+            <ul class="no-bullet ps-0">
+              <li><a href="">Degrees / Majors</a></li>
+              <li><a href="">Colleges and Departments</a></li>
+              <li><a href="">Library</a></li>
+              <li><a href="">Events Calendar</a></li>
+              <li><a href="">Arts and Entertainment</a></li>
+              <li><a href="">Fitness and Recreation</a></li>
+              <li><a href="">Campus and Beyond</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-csm-6 col-clg-3 d-flex flex-column">
+            <div class="mt-5 mt-clg-0">
+              <h2>
+                Campus Info
+              </h2>
+            </div>
+            <ul class="no-bullet ps-0">
+              <li><a href="">About Michigan Tech</a></li>
+              <li><a href="">Accreditation</a></li>
+              <li><a href="">Athletics</a></li>
+              <li><a href="">Campus Map</a></li>
+              <li><a href="">Campus Directory</a></li>
+              <li><a href="">Jobs at Michigan Tech</a></li>
+              <li><a href="">Webcams</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-csm-6 col-clg-3 d-flex flex-column">
+            <div class="mt-5 mt-clg-0">
+              <h2>
+                Policies and Safety
+              </h2>
+            </div>
+            <ul class="no-bullet ps-0">
+              <li><a href="">Campus Safety Information</a></li>
+              <li><a href="">Emergency Contact Information</a></li>
+              <li><a href="">Report a Concern</a></li>
+              <li><a href="">Public Safety / Police Servicesr</a></li>
+              <li><a href="">Student Disclosures</a></li>
+              <li><a href="">Title IX</a></li>
+              <li><a href="">University Policies</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="text-clg-end my-3 text-white">
+            <h2 class="text-warning">
+              Michigan Technological University
+            </h2>
+            <div style="font-size: 14px;">
+              1400 Townsend Drive, Houghton, Michigan 49931-1295
+            </div>
+            <div style="font-size: 14px;">
+              <ul class="d-block d-md-inline-flex p-0 my-1">
+                <li class="mb-3 mb-md-0">
+                  Ph: 
+                  <a href="tel:9064871885" class="text-white">
+                    906-487-1885
+                  </a>
+                </li>
+                <li class="gold-separator mb-3 mb-md-0">
+                  Toll-free: 
+                  <a href="tel:8886881885" class="text-white">
+                    888-688-1885
+                  </a>
+                </li>
+                <li class="gold-separator mb-3 mb-md-0">
+                  Fax: 
+                  <a href="fax:906-487-2125" class="text-white">
+                    906-487-2125
+                  </a>
+                </li>
+                <li class="gold-separator">
+                  <a href="mailto:mtu4u@mtu.edu" class="text-white">
+                    mtu4u@mtu.edu
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Socials -->
+          <div class="row align-items-center mx-0 ps-xxl-0">
+            <div class="col-12 col-lg-7 my-3 mb-md-0 mt-md-2 p-0 order-lg-1">
+              <ul class="social-icons d-flex align-items-center m-0 p-0 justify-content-lg-end flex-wrap">
+                <li class="d-flex my-3 me-3">
+                  <a href="" class="bg-primary rounded-circle">
+                    <object data="images\facebook.svg" class="icon" width="25" height="25"> </object>
+                  </a>
+                </li> 
+                <li class="d-flex my-3 me-3">
+                  <a href="" class="bg-twitterblue rounded-circle">
+                    <object data="images\twitter.svg" class="icon" width="25" height="25"> </object>
+                  </a>
+                </li> 
+                <li class="d-flex my-3 me-3">
+                  <a href="" class="bg-linkedteal rounded-circle">
+                    <object data="images\linkedin.svg" class="icon" width="25" height="25"> </object>
+                  </a>
+                </li> 
+                <li class="d-flex my-3 me-3">
+                  <a href="" class="bg-instapink rounded-circle">
+                    <object data="images\instagram.svg" class="icon" width="25" height="25"> </object>
+                  </a>
+                </li> 
+                <li class="d-flex my-3 me-3">
+                  <a href="" class="bg-youred rounded-circle">
+                    <object data="images\youtube.svg" class="icon" width="25" height="25"> </object>
+                  </a>
+                </li> 
+                <li class="d-flex my-3 me-3">
+                  <a href="" class="bg-flickrred rounded-circle">
+                    <object data="images\flickr.svg" class="icon" width="25" height="25"> </object>
+                  </a>
+                </li> 
+                <li class="d-flex my-3 me-3">
+                  <a href="" class="bg-tiktokblack rounded-circle">
+                    <object data="images\tiktok.svg" class="icon" width="25" height="25"> </object>
+                  </a>
+                </li> 
+                <li class="d-flex my-3 me-3">
+                  <a href="" class="bg-pinred rounded-circle">
+                    <object data="images\pinterest.svg" class="icon" width="25" height="25"> </object>
+                  </a>
+                </li> 
+                <li class="d-flex my-3">
+                  <a href="" class="bg-snapyellow rounded-circle">
+                    <object data="images\snapchat.svg" class="icon" width="25" height="25"> </object>
+                  </a>
+                </li> 
+              </ul>
+            </div>         
+            <div class="col col-sm-4 col-lg-5 order-lg-0 p-1">
+              <a href="/" data-linked-image="true">
+                <img src="//www.mtu.edu/mtu_resources/images/logos/michigan-tech-logo-fullname-solid-old.svg" height="100" width="200" alt="Michigan Technological University" loading="lazy">
+              </a>
+            </div>
+          </div>
+          <hr class="text-white mt-4 mt-md-3">
+          <!-- footnote -->
+          <div class="row d-flex justify-content-between p-0 mx-0 mb-2">
+            <div class="col-12 col-clg-5 text-center text-clg-start ps-xxl-0" style="font-size: 11.9px;">
+              <ul class="d-inline-flex p-0 flex-wrap justify-content-center">
+                <li class="bar-separator"><a href="" class="text-white">Accessibility</a></li>
+                <li class="bar-separator"><a href="" class="text-white">Equal Opportunity</a></li>
+                <li><a href="" class="text-white">Email the Webmaster</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-clg-7 text-center text-clg-end footnote" style="font-size: 14px;">
+              <ul class="d-block d-cmd-inline-flex p-0">
+                <li><a href="" class="text-white"><strong>Tomorrow Needs Michigan Tech</strong></a></li>
+                <li class="gold-separator text-white p-2 p-cmd-0">
+                  © 2023 <a href="" class="text-white">Michigan Technological University</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script>
+      let searchCont = document.getElementById('search-cont');
+      let hideBtn = document.getElementById('hidebtn')
+      let mainNav = document.getElementById('main-navcont');
+      let isShow = true;
+      var display = 0;
+      function hideSearch()
+      {
+        if(isShow) {
+          searchCont.style.display = 'none';
+          mainNav.style.display = 'flex';
+          hideBtn.style.display = 'block';
+          isShow = false;
+        } 
+        else {
+          searchCont.style.display = 'flex';
+          mainNav.style.display = 'none';
+          hideBtn.style.display = 'none';
+          isShow = true;
+        }
+      }
+
+      const scrollBtn = document.querySelector(".btn");
+      const btnVisibility = () => {
+        if (window.scrollY > 400) {
+            scrollBtn.style.visibility = "visible";
+        } else {
+            scrollBtn.style.visibility = "hidden";
+        }
+      };
+      document.addEventListener("scroll", () => {
+      btnVisibility();
+      });
+      scrollBtn.addEventListener("click", () => {
+      window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1607 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css\Michigan.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Michigan Tech</title>
+  </head>
+
+  <body>
+    <header>
+      <!-- scroll to top -->
+      <div className="scroll-to-top">
+        <span class="btn btn-position btn-warning to-top d-flex justify-content-center align-items-end pb-0">Top</span>
+      </div>
+      <!--Top nav-->
+      <nav class="navbar navbar-expand-lg fixed-top py-0 py-lg-2 py-xl-3 navbar-dark bg-black">
+        <div class="container-xxl px-0 px-lg-2 justify-content-between">
+          <button class="navbar-toggler d-lg-none bg-warning text-black border-0 rounded-0 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list fs-1"></i>
+            <span class="d-block" style="font-size: 12px;">Menu</span>
+          </button>
+          
+        <!-- offcanvas -->
+          <div class="offcanvas offcanvas-start  d-lg-none" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
+            </div>
+            <div class="offcanvas-body p-0 d-flex flex-column">
+              <div class="p-3 bg-footergrey">
+                <div class="nav-search">
+                  <div class="input-group text-warning">
+                    <input type="text" class="form-control rounded-0" placeholder="Search" aria-label="Text input with dropdown button">
+                    <select id="search-options" class="search-options border-1">
+                      <option value="mtu">Michigan Tech</option>
+                      <option value="programs" data-action="">Programs</option>
+                      <option value="directory">Directory</option>
+                    </select>
+                    <button class="btn text-warning bg-black px-1 py-1 rounded-0" type="button">
+                      <i class="bi bi-search"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="give-apply d-flex text-center">
+                <a class="menu-link bg-black text-white py-2" href="#pricing">Give</a>
+                <a class="menu-link text-black bg-warning py-2" href="#pricing">Apply</a>
+              </div>
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header d-flex justify-content-between">
+                    <button class="accordion-button collapsed d-flex text-decoration-underline" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Undergraduate Admissions
+                      <!-- <i class="bi bi-caret-down"></i> -->
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse bg-footergrey text-white" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <ul class="p-0">
+                        <li><a class="dropdown-item py-2" href="#">Majors, Minors, and More</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Life at Tech</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Cost and Financial Aid</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Visit Campus</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Request Information</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Admitted Students</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Apply to Michigan Tech</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed d-flex text-decoration-underline" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Graduate Admissions
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse bg-footergrey text-white" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <ul class="p-0">
+                        <li><a class="dropdown-item py-2" href="#">Prospective Students</a></li>
+                        <li><a class="dropdown-item py-2" href="#">On-Campus Degrees and Certificates</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Online Degrees and Certificates</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Financial Information</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Request Information</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Admitted Students</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Apply to Michigan Tech</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed d-flex text-decoration-underline" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Academics
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse bg-footergrey text-white" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                    <ul class="p-0">
+                      <li><a class="dropdown-item py-2" href="#">Majors, Degrees, and Programs</a></li>
+                      <li><a class="dropdown-item py-2" href="#">Colleges and Departments</a></li>
+                      <li><a class="dropdown-item py-2" href="#">Accreditation</a></li>
+                      <li><a class="dropdown-item py-2" href="#">Pavlis Honors College</a></li>
+                      <li><a class="dropdown-item py-2" href="#">Library</a></li>
+                      <li><a class="dropdown-item py-2" href="#">Career Services</a></li>
+                      <li><a class="dropdown-item py-2" href="#">Enterprise Program</a></li>
+                    </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed d-flex text-decoration-underline" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                      Campus Life
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFour" class="accordion-collapse collapse bg-footergrey text-white" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <ul class="p-0">
+                        <li><a class="dropdown-item py-2" href="#">Majors, Degrees, and Programs</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Colleges and Departments</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Accreditation</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Pavlis Honors College</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Library</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Career Services</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Enterprise Program</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed d-flex text-decoration-underline" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                      Research
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFive" class="accordion-collapse collapse bg-footergrey text-white" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <ul class="p-0">
+                        <li><a class="dropdown-item py-2" href="#">Majors, Degrees, and Programs</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Colleges and Departments</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Accreditation</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Pavlis Honors College</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Library</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Career Services</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Enterprise Program</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed d-flex text-decoration-underline" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                      About
+                    </button>
+                  </h2>
+                  <div id="flush-collapseSix" class="accordion-collapse collapse bg-footergrey text-white" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <ul class="p-0">
+                        <li><a class="dropdown-item py-2" href="#">Majors, Degrees, and Programs</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Colleges and Departments</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Accreditation</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Pavlis Honors College</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Library</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Career Services</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Enterprise Program</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed d-flex bg-black text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                      Infor for...
+                    </button>
+                  </h2>
+                  <div id="flush-collapseSeven" class="accordion-collapse collapse bg-footergrey text-white" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <ul class="p-0">
+                        <li><a class="dropdown-item py-2" href="#">Majors, Degrees, and Programs</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Colleges and Departments</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Accreditation</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Pavlis Honors College</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Library</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Career Services</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Enterprise Program</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed d-flex bg-black text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                      Tech links
+                    </button>
+                  </h2>
+                  <div id="flush-collapseEight" class="accordion-collapse collapse bg-footergrey text-white" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <ul class="p-0">
+                        <li><a class="dropdown-item py-2" href="#">Majors, Degrees, and Programs</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Colleges and Departments</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Accreditation</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Pavlis Honors College</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Library</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Career Services</a></li>
+                        <li><a class="dropdown-item py-2" href="#">Enterprise Program</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- nav content -->
+          <a href="#intro" class="michigan-nav-logo">
+            <img src="Images\michigan-tech-logo-full-yellow.svg" height="40.4" width="200">
+          </a>
+          <div class="d-lg-none d-flex"></div>
+          <div class="collapse navbar-collapse justify-content-end align-center" id="mainNav">
+            <ul class="navbar-nav" id="main-navcont">
+              <li class="nav-item d-flex">
+                <a class="nav-link" href="#topics">Students</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-nowrap" href="#reviews">Faculty/​Staff</a> 
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#reviews">Alumni</a> 
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Parents</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Industry</a>
+              </li>
+              <li class="nav-item dropdown">
+                <div class="btn dropdown-toggle text-warning tech-link" type="button"  aria-expanded="false">
+                  Tech Links
+                </div>
+                <ul class="dropdown-menu drop-effect d-none p-0" style="max-width: 11rem;">
+                  <li><a class="dropdown-item text-black text-decoration-none text-wrap py-2" href="#">A to Z</a></li>
+                  <li><a class="dropdown-item text-black text-decoration-none text-wrap py-2" href="#">Banweb</a></li>
+                  <li><a class="dropdown-item text-black text-decoration-none text-wrap py-2" href="#">Campus Map</a></li>
+                  <li><a class="dropdown-item text-black text-decoration-none text-wrap py-2" href="#">Canvas</a></li>
+                  <li><a class="dropdown-item text-black text-decoration-none text-wrap py-2" href="#">Email</a></li>
+                  <li><a class="dropdown-item text-black text-decoration-none text-wrap py-2" href="#">MyMichiganTech</a></li>
+                  <li><a class="dropdown-item text-black text-decoration-none text-wrap py-2" href="#">Safety Data Sheets</a></li>
+                  <li><a class="dropdown-item text-black text-decoration-none text-wrap py-2" href="#">Website Settings</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- navsearch -->
+            <div class="nav-search">
+              <div class="input-group text-warning" id="search-cont">
+                Search
+                <input type="text" class="form-control rounded-0 py-0" aria-label="Text input with dropdown button">
+                <select id="search-options" class="search-options border-1">
+                  <option value="mtu">Michigan Tech</option>
+                  <option value="programs" data-action="">Programs</option>
+                  <option value="directory">Directory</option>
+                </select>
+                <button class="btn border-warning border-2 text-warning p-0 px-1 mx-1">
+                  Go
+                </button>
+                <button class="btn btn-warning rounded-0 py-0 px-1" type="button" onclick="hideSearch()">
+                  <object data="images\arrow-up-black.svg" class="icon" width="20" height="20"> </object>
+                </button>
+              </div>
+              <p class="d-inline-flex m-0 gap-1 text-btn">
+                <button class="btn rounded-0" id="hidebtn"  type="button" onclick="hideSearch()">
+                </button>
+              </p>
+            </div>
+            <div class="give-apply d-grid d-flex gap-2">
+              <a class="outline ms-2" href="#pricing">Give</a>
+              <a class="text-black bg-warning" href="#pricing">Apply</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Post nav -->
+      <div class="postnav d-none d-lg-flex pt-xl-3">
+        <div class="container-xxl p-0">
+          <ul class="d-flex justify-content-between m-0 ps-3">
+            <li class="dropdown">
+              <div class="btn test text-decoration-underline text-white py-3 dropdown-toggle" type="button"  aria-expanded="false">
+                Undergraduate Admissions
+              </div>
+              <ul class="dropdown-menu d-none p-0">
+                <li><a class="dropdown-item text-wrap py-2" href="#">Majors, Minors, and More</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Life at Tech</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Cost and Financial Aid</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Visit Campus</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Request Information</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Admitted Students</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Apply to Michigan Tech</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <div class="btn text-decoration-underline text-white py-3 test dropdown-toggle" type="button"  aria-expanded="false">
+                Graduate Admissions
+              </div>
+              <ul class="dropdown-menu d-none p-0">
+                <li><a class="dropdown-item text-wrap py-2" href="#">Prospective Students</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">On-Campus Degrees and Certificates</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Online Degrees and Certificates</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Financial Information</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Request Information</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Admitted Students</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Apply to Michigan Tech</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <div class="btn text-decoration-underline text-white py-3 test dropdown-toggle" type="button"  aria-expanded="false">
+                Academics
+              </div>
+              <ul class="dropdown-menu d-none p-0">
+                <li><a class="dropdown-item text-wrap py-2" href="#">Majors, Degrees, and Programs</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Colleges and Departments</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Accreditation</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Pavlis Honors College</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Library</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Career Services</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Enterprise Program</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <div class="btn text-decoration-underline text-white py-3 test dropdown-toggle" type="button"  aria-expanded="false">
+                Campus Life
+              </div>
+              <ul class="dropdown-menu d-none p-0">
+                <li><a class="dropdown-item text-wrap py-2" href="#">Athletics</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Arts and Entertainment</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Fitness and Recreation</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Housing and Dining</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Student Leadership and Involvement</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Student Mental Health and Well-being</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Webcams</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <div class="btn text-decoration-underline text-white py-3 test dropdown-toggle" type="button"  aria-expanded="false">
+                Research
+              </div>
+              <ul class="dropdown-menu d-none p-0">
+                <li><a class="dropdown-item text-wrap py-2" href="#">Research Areas</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Current Research Projects</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Centers and Institutes</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Research Integrity</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Research Magazine</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Undergraduate Research</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <div class="btn text-decoration-underline text-white py-3 test dropdown-toggle" type="button"  aria-expanded="false">
+                About
+              </div>
+              <ul class="dropdown-menu drop-effect d-none dropdown-menu-end p-0">
+                <li><a class="dropdown-item text-wrap py-2" href="#">University Facts and Figures</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">History</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Traditions</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Michigan Tech Magazine</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Diversity and Inclusion</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">President's Council</a></li>
+                <li><a class="dropdown-item text-wrap py-2" href="#">Strategic Plan</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>  
+    </header>
+    
+    <!-- hero -->
+    <section>
+      <div class="hero-img mt-5 mt-lg-0">
+        <img src="images\hero5.webp"  alt="Students explore the many companies that make their way to Michigan Tech's Campus for Career Fair." height="240" width="100%" style="object-fit: cover;">
+        <div class="bottom-right text-white">
+          <i class="bi bi-info-circle"></i>
+          In Pursuit of Galactic Mysteries
+        </div>
+      </div>
+    </section>
+
+    <!-- about Michigan -->
+    <section id="intro" class="py-4">
+      <div class="container-xl">
+        <div class="grid-row">
+          <div class="row justify-content-center align-item-center text-center">
+            <p class="mt-2">
+              Michigan Technological University is a flagship public research university founded in 1885. Our campus in Michigan’s Upper Peninsula overlooks the Keweenaw Waterway and is just a few miles from Lake Superior.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- degree -->
+    <section id="degree" class="bg-black text-light">
+      <div class="section-fit pb-3 pb-cmd-4 pb-clg-5">
+        <div class="grid-row px-0">
+          <div class="row mx-0 g-4">
+            <div class="degree-text col-12 col-clg-9 text-center text-clg-start ps-clg-0">
+              <h2 class="fw-light text-larger mt-2 mb-4">
+                Degrees for What Tomorrow Needs
+              </h2>
+              <p class="pb-3">
+                Find what makes you tick. Work hard. Change the world. With more than 125 degree programs to choose from, you’ll be sure to find an academic home at Michigan Tech that suits your unique passions and strengths.
+              </p>
+              <div class="input-group degree-search mb-3">
+                <input type="text" class="form-control py-2" placeholder="Find a degree program..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                <i class="bi bi-search degree-search-icon"></i>
+                <!-- <object data="search-black.svg" class="icon" width="25" height="25"> </object> -->
+              </div>           
+              <div class="browse pt-3">
+                <span> Browse by Degree Level:</span>
+                <ul class="browse-list d-inline-flex ps-3 mt-2 mb-0">
+                  <li><a href="" class="pe-2 text-white">Bachelor's</a></li>
+                  <li class="browse-list-link"><a href="" class="text-white">Master's</a></li>
+                  <li class="browse-list-link" ><a href="" class="text-white">Doctorate</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-clg-3 d-flex flex-column justify-content-between align-items-stretch gap-2 pe-clg-0" id="black-button">
+              <a class="btn btn-warning btn-clg fw-semibold fs-6 d-flex justify-content-center p-3" href="#" role="button">
+                Pay My Deposit
+              </a>
+              <a class="btn btn-warning btn-clg fw-semibold fs-6 d-flex justify-content-center p-3" href="#" role="button">
+                Request Information
+              </a>
+              <a class="btn btn-warning btn-clg fw-semibold fs-6 d-flex justify-content-center p-3" href="#" role="button">
+                Schedule a Visit
+              </a>
+              <a class="btn btn-warning btn-clg fw-semibold fs-6 d-flex justify-content-center p-3" href="#" role="button">
+                Apply Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Academics -->
+    <section>
+      <div class="body-section">
+        <div class="full-width">
+          <div class="top-title d-flex flex-wrap align-items-center justify-content-between">
+            <h2>
+              Academics
+            </h2>
+            <div id="top-title-link" class="d-flex">
+              <a href="/colleges-schools/" class="px-3 py-1 me-3">
+                <span>
+                  Colleges and Depts
+                </span>
+              </a>
+              <a href="/provost/accreditation/" class="px-3 py-1">
+                <span>
+                  Accreditation
+                </span>
+              </a>
+            </div>
+          </div>
+          <hr class="my-3 opacity-100">
+          <div class="row row-cols-3 mb-5 g-3 g-cmd-4 py-3">
+            <div class="col-12 col-cmd-6 col-clg-4">
+              <div class="card card_eff position-relative overflow-hidden rounded-0">
+                <img src="images\ug-majors-card400.webp" class="card-img position-relative" alt="...">
+                <div class="card-img-overlay d-flex flex-column ">
+                  <h3 class="card-title fw-normal">
+                    <a href="" class="text-white">
+                      Undergraduate Admissions
+                    </a>
+                  </h3>
+                  <div type="button" class="btn btn-t text-black d-block btn-sm position-absolute acad-btn fw-semibold px-3 py-2">
+                    Learn More
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-cmd-6 col-clg-4">
+              <div class="card card_eff position-relative overflow-hidden rounded-0">
+                <img src="images\grad-programs-card400.webp" class="card-img position-relative" alt="...">
+                <div class="card-img-overlay d-flex flex-column ">
+                  <h3 class="card-title fw-normal">
+                    <a href="" class="text-white">
+                      Graduate School
+                    </a>
+                  </h3>
+                  <div type="button" class="btn btn-t text-black d-block btn-sm position-absolute acad-btn fw-semibold px-3 py-2">
+                    Learn More
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-cmd-6 col-clg-4">
+              <div class="card card_eff position-relative overflow-hidden rounded-0">
+                <img src="images\online-card400.webp" class="card-img position-relative" alt="...">
+                <div class="card-img-overlay d-flex flex-column ">
+                  <h3 class="card-title fw-normal">
+                    <a href="" class="text-white">
+                      Michigan Tech Global Campus
+                    </a>
+                  </h3>
+                  <div type="button" class="btn btn-t text-black d-block btn-sm position-absolute acad-btn fw-semibold px-3 py-2">
+                    Learn More
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-cmd-6 col-clg-4">
+              <div class="card card_eff position-relative overflow-hidden rounded-0">
+                <img src="images\pavlis-card800.webp" class="card-img position-relative" alt="...">
+                <div class="card-img-overlay d-flex flex-column ">
+                  <h3 class="card-title fw-normal">
+                    <a href="" class="text-white">
+                      Pavlis Honors College
+                    </a>
+                  </h3>
+                  <div type="button" class="btn btn-t text-black d-block btn-sm position-absolute acad-btn fw-semibold px-3 py-2">
+                    Learn More
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-cmd-6 col-clg-4">
+              <div class="card card_eff position-relative overflow-hidden rounded-0">
+                <img src="images\campusmap-card400.webp" class="card-img position-relative " alt="...">
+                <div class="card-img-overlay d-flex flex-column ">
+                  <h3 class="card-title fw-normal">
+                    <a href="" class="text-white">
+                      Take a Virtual Tour
+                    </a>
+                  </h3>
+                  <div type="button" class="btn btn-t text-black d-block btn-sm position-absolute acad-btn fw-semibold px-3 py-2">
+                    Learn More
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-cmd-6 col-clg-4">
+              <div class="card card_eff position-relative overflow-hidden rounded-0">
+                <img src="images\student-life-card400.webp" class="card-img position-relative" alt="...">
+                <div class="card-img-overlay d-flex flex-column ">
+                  <h3 class="card-title fw-normal">
+                    <a href="" class="text-white">
+                      Student Life
+                    </a>
+                  </h3>
+                  <div type="button" class="btn btn-t text-black d-block btn-sm position-absolute acad-btn fw-semibold px-3 py-2">
+                    Learn More
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Difference -->
+    <section class="difference bg-warning">
+      <div class=".body-section">
+        <div class="section-fit">
+          <div class="grid-row ">
+            <div class="top-title d-flex flex-wrap align-items-center justify-content-between">
+              <h2>
+                The Tech Difference
+              </h2>
+              <div id="top-title-link" class="d-flex">
+                <a href="/colleges-schools/" class="px-3 py-1 me-3">
+                  <span>
+                    ROI
+                  </span>
+                </a>
+                <a href="/provost/accreditation/" class="px-3 py-1">
+                  <span>
+                    Cost and Financial Aid
+                  </span>
+                </a>
+              </div>
+            </div>
+            <hr class="my-3 opacity-100">
+            <!-- tout -->
+            <div class="grid-row">
+              <div class="tout-hollow">
+                <ul class="mt-5 p-0">
+                  <li class="tout-item">
+                    <a href="">  
+                      <div class="fw-semibold tout-cg d-flex justify-content-center align-items-center">
+                        <span>
+                          Top 25
+                        </span>                
+                      </div>               
+                    </a>               
+                    <div class="tout-text">
+                      <p>
+                        in the nation for return on investment (Forbes)
+                      </p>        
+                    </div>               
+                  </li>
+                  <li class="tout-item">
+                    <a href="">  
+                      <div class="fw-semibold tout-cg d-flex justify-content-center align-items-center">
+                        <span>
+                          Top 20
+                        </span>                
+                      </div>              
+                    </a>
+                    <div class="tout-text">
+                      <p>
+                        Best Public College in the US (Wall Street Journal)
+                      </p>
+                    </div>
+                  </li>
+                  <li class="tout-item">
+                    <a href="">  
+                      <div class="fw-semibold tout-cg d-flex justify-content-center align-items-center">
+                        <span>
+                          $71K+
+                        </span>                
+                      </div>               
+                    </a>
+                    <div class="tout-text">
+                      <p>
+                        median early career pay
+                      </p>
+                    </div>
+                  </li>
+                  <li class="tout-item">
+                    <a href="">  
+                      <div class="fw-semibold tout-cg d-flex justify-content-center align-items-center">
+                        <span>
+                          7,000+
+                        </span>                
+                      </div>                
+                    </a>
+                    <div class="tout-text">
+                      <p>
+                        enrolled students from 55+ countries
+                      </p>                
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Houghton -->
+    <section>
+      <div class="container-xxl">
+        <div class="full-width mt-5"> 
+          <div class="row gy-5 gx-2 mx-0">
+            <div class="col-12 col-cmd-4">
+              <h2 class="fw-semibold" style="font-size: 1.75rem;">
+                Come Home to Houghton
+              </h2>
+              <p class="">
+                Our beautiful waterfront campus in Michigan's Upper Peninsula is situated just miles from Lake Superior. Find yourself in a close-knit college town where winters are epic and outdoor adventure awaits. At Tech, we embrace our size, climate, sense of adventure, and originality.
+              </p>
+              <p class="mb-5">
+                <a href="">
+                  Visit us
+                </a>
+                in Houghton and find where you belong.
+                </p>   
+              <div class="d-flex flex-column justify-content-center mb-cmd-5 gap-4 text-black black-button">
+                <button class="btn btn-warning fw-semibold mx-csm-5 mx-cmd-0 mx-xlg-5" type="button" style="max-width: 18rem;">
+                  Schedule Your Visit
+                </button>
+                <button class="btn btn-white border-black fw-semibold mx-csm-5 mx-cmd-0 mx-xlg-5" type="button" style="max-width: 18rem;">
+                  Virtual Tours
+                </button>
+                <button class="btn btn-white border-black fw-semibold mx-csm-5 mx-cmd-0 mx-xlg-5" type="button" style="max-width: 18rem;">
+                  Campus and Beyond
+                </button>
+              </div>
+            </div>
+            <!-- carousel -->
+            <div class="col-12 col-cmd-8 p-0 ps-md-4">
+              <div id="carouselExampleCaptions" class="carousel slide houghton-image">
+                <div class="carousel-indicators mb-1">
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                  <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button> -->
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images\map-card800.webp" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block text-start p-3">
+                      <p>Michigan Technological University is located in Houghton, Michigan.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images\campus-aerial-card800.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-block text-start p-3">
+                      <p>Our campus in Houghton is the perfect blend of technology and natural beauty.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images\mountain-biking-card800.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-block text-start p-3">
+                      <p>At Michigan Tech, outdoor adventure comes with the territory (in any season).</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images\mont-ripley-card800.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-block text-start p-3">
+                      <p>Huskies ski and snowboard for free at Mont Ripley, our very own hill that overlooks campus.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images\houghton-hancock-card800.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-block text-start p-3">
+                      <p>Houghton, its sister city Hancock, and the surrounding towns is home to approximately 15,000 year-round residents.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images\keweenaw-rock-hunters-card800.webp" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-block text-start p-3">
+                      <p>Lake Superior is all around you here in the Keweenaw Peninsula.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images\winter-hiking-card800.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-block text-start p-3">
+                      <p>With more than 200 inches of annual snowfall, Houghton is one of the snowiest cities in the US.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images\husky-statue-card800.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-block text-start p-3">
+                      <p>Schedule a campus tour and experience Michigan Tech for yourself.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button> -->
+              </div>
+            </div>
+            <!-- <div class="col-12 col-cmd-8">
+              <div id="carouselExampleCaptions" class="carousel slide houghton-image mb-3">
+                <div class="carousel-indicators">
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                <div class="carousel-inner">
+
+                  <div class="carousel-item active">
+                    <img src="images\map-card800.webp" class="d-block w-100" alt="...">
+
+                    <div class="carousel-caption">
+                      <p>Michigan Technological University is located in Houghton, Michigan.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images\campus-aerial-card800.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p>Our campus in Houghton is the perfect blend of technology and natural beauty.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images\mountain-biking-card800.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p>At Michigan Tech, outdoor adventure comes with the territory (in any season).</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images\mont-ripley-card800.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Huskies ski and snowboard for free at Mont Ripley, our very own hill that overlooks campus.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images\houghton-hancock-card800.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Houghton, its sister city Hancock, and the surrounding towns is home to approximately 15,000 year-round residents.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images\keweenaw-rock-hunters-card800.webp" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Lake Superior is all around you here in the Keweenaw Peninsula.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images\winter-hiking-card800.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>With more than 200 inches of annual snowfall, Houghton is one of the snowiest cities in the US.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images\husky-statue-card800.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Schedule a campus tour and experience Michigan Tech for yourself.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leading Scholar -->
+    <section>
+      <div class="section-fit background-smoke-gray">
+        <div class="grid-row px-0 py-3">
+          <div class="row mx-0 g-4">
+            <div class="col-12 col-cmd-6 ps-lg-0">
+              <img src="images\leading-scholar-card800.jpg" alt="Students participating in an unbox challenge during Leading Scholar" class="card-img pe-cmd-2">
+            </div>
+            <div class="col-12 col-cmd-6">
+              <div class="top-title my-2">
+                <h2>
+                  Leading Scholar
+                </h2>
+              </div>
+              <hr class="mt-0 mb-3 opacity-100">
+              <p>
+                <span>
+                  The 
+                  <a href="">
+                    Leading Scholar Award
+                  </a>
+                  is Michigan Tech’s premier scholarship. It is awarded to incoming first-year students who have not only excelled in their academic pursuits, but also demonstrated outstanding leadership and a passion for serving others. Each year, we recognize a select group of students whose remarkable achievements have left a mark in their local community, knowing they will bring that same excellence to our campus.
+                </span>
+              </p>
+              <div class="d-grid mx-auto text-black black-button d-flex justify-content-center py-4">
+                <button class="btn border-black fw-semibold" type="button" style="min-width: 15.5rem;">
+                  Leading Scholar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- H-STEM Construction -->
+    <section class="bg-black text-white">
+      <div class="section-fit">
+        <div class="grid-row px-2 px-clg-0 py-3">
+          <div class="row mx-0 gx-1 gy-5">
+            <div class="col-12 col-cmd-6 pe-md-4">
+              <div class="top-title d-flex flex-wrap align-items-center justify-content-between">
+                <h2>
+                  H-STEM Construction
+                </h2>
+                <div id="top-title-link" class="d-flex">
+                  <a href="" class="yellow px-3 py-1">
+                    <span>
+                      Learn More
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <hr class="my-3 opacity-100">
+              <p>
+                <span>
+                  The 
+                  <a href="">
+                    H-STEM Complex
+                  </a>
+                  is a major investment in our campus by the State of Michigan and the University that will provide state-of-the-art teaching and research labs for health-related STEM studies. The project is planned to be completed and the building occupied sometime in early 2024.
+                </span>
+              </p>
+              <div id="black-button" class="d-block d-cxsm-inline-flex justify-content-center pt-4 mb-md-4">
+                <button type="button" class="btn btn-black white-button text-white border-white px-4 px-cmd-3 px-xlg-4 py-3 mx-4 ms-csm-2 me-csm-0 ms-cmd-2 me-cmd-1 mx-xlg-3 mb-4 mb-csm-3 fs-6 fw-semibold">
+                  Construction Updates
+                </button>
+                <button type="button" class="btn btn-black white-button text-white border-white px-4 px-cmd-3 px-xlg-4 py-3 mx-4 me-csm-2 ms-csm-1 me-cmd-2 ms-cmd-1 mx-xlg-3 mb-3 fs-6 fw-semibold">
+                  Construction Webcam
+                </button>
+              </div>
+            </div>
+            <div class="col-12 col-cmd-6 mb-4">
+              <div class="movie-wrapper">
+                <img src="images\maxresdefault.jpg" alt="A Tech Laboratory" class="card-img">
+                <!-- <video tabindex="-1" class="video-stream html5-main-video" webkit-playsinline="" playsinline="" controlslist="nodownload" style="width: 449px; height: 253px; left: 0px; top: 32px;" src="blob:https://www.youtube.com/ba8118d3-6675-4b46-90dd-dd5089a544c7"></video> -->
+                <button class="playhead bg-warning" aria-label="Watch H-STEM Engineering and Health Sciences Complex">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="55" width="40" stroke="#000" fill="#fff" stroke-width="0" viewBox="0 -10 120 155" role="presentation">
+                    <polygon points="25,0 100,40 25,80"></polygon>
+                    <text x="10" y="140" fill="#000" stroke="none" style="font-size: 34px; font-family: 'Open Sans', Arial, sans-serif; font-weight:600;">
+                      Watch
+                    </text>
+                  </svg>
+                </button>
+              </div>             
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest News and Stories -->
+    <section class="body-section">
+      <div class="full-width">
+        <div class="nosidebar">
+          <div class="top-title d-flex flex-wrap align-items-center justify-content-between">
+            <h2>
+              Latest News and Stories
+            </h2>
+            <div id="top-title-link" class="d-flex">
+              <a href="" class="px-3 py-1 me-3">
+                <span>
+                  All News
+                </span>
+              </a>
+              <a href="" class="px-3 py-1 me-3">
+                <span>
+                  Husky Nation
+                </span>
+              </a>
+              <a href="" class="px-3 py-1">
+                <span>
+                  Magazines
+                </span>
+              </a>
+            </div>
+          </div>
+          <hr class="my-3 opacity-100">
+          <div class="row card-go d-flex g-4">
+            <div class="col-12 col-xsm-6 col-cclg-4 col-xlg-3">
+              <div class="card news-card h-100">
+                <img src="images\crop.jfif" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                  <span class="news-date small">
+                    September 13, 2023
+                  </span>
+                  <a href="" class="card-heading h5 py-2">
+                    $5.4 Million Federal Cooperative Agreement Will Support Michigan Tech Student and Faculty Researchers
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-xsm-6 col-cclg-4 col-xlg-3">
+              <div class=" card news-card h-100">
+                <img src="images\crop (1).jfif" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                  <span class="news-date small">
+                    September 12, 2023
+                  </span>
+                  <a href="" class="card-heading h5 py-2">
+                    New Countries, New Perspectives: A Husky's Take on Study Abroad in Spain
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-xsm-6 col-cclg-4 col-xlg-3">
+              <div class="card news-card h-100">
+                <img src="images\crop (2).jfif" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                  <span class="news-date small">
+                    September 7, 2023
+                  </span>
+                  <a href="" class="card-heading h5 py-2">
+                    The Pack Is On Track: Michigan Tech Enrollment at Levels Not Seen Since Early 1980s
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-xsm-6 col-cclg-4 col-xlg-3">
+              <div class="card news-card h-100">
+                <img src="images\crop (3).jfif" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                  <span class="news-date small">
+                    August 30, 2023
+                  </span>
+                  <a href="" class="card-heading h5 py-2">
+                    Not Sure What You Want to Study? Tech's Undeclared Program Helps Students Choose a Major
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Events -->
+    <section>
+      <div class="section-fit background-smoke-gray">
+        <div class="grid-row">
+          <div class="top-title d-flex flex-wrap align-items-center justify-content-between">
+            <h2>Featured Events</h2>
+            <div id="top-title-link" class="d-flex">
+              <a href="" class="px-3 py-1">
+                <span>
+                  All Events
+                </span>
+              </a>
+            </div>
+          </div>
+          <hr class="my-3 opacity-100">
+          <div class="events feed-import pb-5">
+            <div class="card-detail pb-3">
+              <div class="card-hero me-3">
+                <img src="images\events1.jpg" alt="events1" class="events-image">
+              </div>
+              <div class="card-section">
+                <div class="card-date">
+                  <span class="event-date">
+                    Tuesday, September 19
+                  </span>
+                  <span class="event-time small">
+                    12–5 p.m.
+                  </span>
+                </div>
+                <a href="" class="card-heading mt-3 h5-like">
+                  MTU Fall 2023 Career Fair Forged by NUCOR
+                </a>
+                <div class="card-category mt-3 mb-2 small">
+                  Student Development Complex (SDC)
+                </div>
+              </div>
+            </div>
+            <div class="card-detail pb-3">
+              <div class="card-hero me-3">
+                <img src="images\events2.jpg" alt="events2" class="events-image">
+              </div>
+              <div class="card-section">
+                <div class="card-date ">
+                  <span class="event-date">
+                    Tuesday, September 26
+                  </span>
+                  <span class="event-time small">
+                    6–9 p.m.
+                  </span>
+                </div>
+                <a href="" class="card-heading h5-like">
+                  (Women's Volleyball) Northern Michigan vs. Michigan Tech
+                </a>
+                <div class="card-category small mt-3 mb-2 ">
+                  Student Development Complex (SDC)
+                </div>
+              </div>
+            </div>
+            <div class="card-detail pb-3">
+              <div class="card-hero me-3">
+                <img src="images\events3.jpg" alt="events3" class="events-image">
+              </div>
+              <div class="card-section">
+                <div class="card-date">
+                  <span class="event-date">
+                    Friday, September 29
+                  </span>
+                  <span class="event-time small">
+                  </span>
+                </div>
+                <a href="" class="card-heading h5-like">
+                  Support Pack Weekend (formerly Family Weekend) - 9/29/2023 &amp; 9/30/2023
+                </a>
+                <div class="card-category small mt-3 mb-2 ">
+                </div>
+              </div>
+            </div>
+            <div class="card-detail pb-3">
+              <div class="card-hero me-3">
+                <img src="images\events4.jpg" alt="events4" class="events-image">
+              </div>
+              <div class="card-section">
+                <div class="card-date">
+                  <span class="event-date">
+                    Friday, September 29
+                  </span>
+                  <span class="event-time small">
+                    3–7 p.m.
+                  </span>
+                </div>
+                <a href="" class="card-heading h5-like">
+                  Fall Color Tour
+                </a>
+                <div class="card-category small mt-3 mb-2">
+                  Mont Ripley Ski Area				
+                </div>
+              </div>
+            </div>
+            <div class="card-detail pb-3">
+              <div class="card-hero me-3">
+                <img src="images\events5.jpg" alt="events5" class="events-image">
+              </div>
+              <div class="card-section">
+                <div class="card-date">
+                  <span class="event-date">
+                    Friday, September 29
+                  </span>
+                  <span class="event-time small">
+                    4–6 p.m.
+                  </span>
+                </div>
+                <a href="" class="card-heading h5-like">
+                  Homecoming: Cardboard Boat Races
+                </a>
+                <div class="card-category small mt-3 mb-2">
+                  Kestner Waterfront Park				
+                </div>
+              </div>
+            </div>
+            <div class="card-detail pb-3">
+              <div class="card-hero me-3">
+                <img src="images\events6.jpg" alt="events6" class="events-image">
+              </div>
+              <div class="card-section">
+                <div class="card-date">
+                  <span class="event-date">
+                    Wednesday, October 4
+                  </span>
+                  <span class="event-time small">
+                  </span>
+                </div>
+                <a href="" class="card-heading h5-like mt-3">
+                  Showcase[AI] 2023
+                </a>
+                <div class="card-category small mt-3 mb-2">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stay Connected -->
+    <section>
+      <div class="section-fit bg-white">
+        <div class="grid-row">
+          <div class="sign-up-form">
+            <div class="sign-up-form-intro">
+              <div class="top-title d-flex flex-wrap align-items-center justify-content-between">
+                <h2>
+                  Stay Connected
+                </h2>
+                <div id="top-title-link" class="d-flex">
+                  <a href="" class="px-3 py-1">
+                    <span>
+                      Social Media
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <hr class="my-3 opacity-100">
+              <p>
+                Subscribe here and we'll email you the latest Michigan Tech News and featured campus events each month.
+              </p>
+            </div>
+            <div class="input-group signup-form mb-lg-4">
+              <input type="text" class="form-control ps-3" placeholder="Enter Email" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button class="signup-form-button py-2" type="button" id="button-addon2">
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tomorrow -->
+    <section class="bg-warning">
+      <div class="section-fit">
+        <div class="grid-row">
+          <p class="text-center mb-0" style="font-size: 1.85rem; line-height: 1.45;">
+            Tomorrow needs Michigan Tech.
+            <br>
+            Tomorrow needs you.
+          </p>
+          <p class="text-center mt-3" style="font-size: 1.45rem;">
+            Take the next step and join Husky nation.
+          </p>
+          <ul class="d-block d-csm-flex row-cols-csm-2 row-cols-cmd-3 justify-content-center justify-content-cmd-between p-0 mx-4 mt-5 mt-csm-0 text-center flex-wrap">
+            <li>
+              <a class="text-decoration-none text-white bg-black my-4 rounded-2 fw-semibold yellow-button" href="Request Info.html">
+                Request Info
+              </a>
+            </li>
+            <li>
+              <a class="text-decoration-none text-white bg-black my-4 rounded-2 fw-semibold yellow-button" href="">
+                Schedule a Visit
+              </a>
+            </li>
+            <li>
+              <a class="text-decoration-none text-white bg-black my-4 mt-csm-0 my-cmd-4 rounded-2 fw-semibold yellow-button" href="">
+                Apply Now
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mtu-footer bg-black">
+      <div class="p-2 bg-footergrey">
+        <!-- <ul class="no-bullet row d-flex">
+        </ul>> -->
+      </div>
+      <div class="full-width mb-0">
+        <!-- footer-menu -->
+        <div class="row d-flex p-0 mx-0 mt-5 mb-3">
+          <div class="col-12 col-csm-6 col-clg-3 d-flex flex-column ps-xl-0">
+            <div>
+              <h2>
+                Admissions
+              </h2>
+            </div>
+            <ul class="no-bullet ps-0">
+              <li>
+                <a href="/admissions/">
+                  Undergraduate Admissions
+                </a>
+              </li>
+              <li>
+                <a href="/gradschool/">
+                  Graduate Admissions</a></li>
+              <li>
+                <a href="/globalcampus/">
+                  Global Campus
+                </a>
+              </li>
+              <li>
+                <a aria-label="Request Information from Michigan Tech" href="">
+                  Request Information
+                </a>
+              </li>
+              <li>
+                <a aria-label="Schedule a Visit to Michigan Tech" href="/visit/">
+                  Schedule a Visit
+                </a>
+              </li>
+              <li>
+                <a aria-label="Apply to Michigan Tech" href="/apply/">
+                  Apply
+                </a>
+              </li>
+              <li>
+                <a aria-label="Virtual Tours of Michigan Tech" href="/virtual-tour/">
+                  Virtual Tours
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-csm-6 col-clg-3 d-flex flex-column">
+            <div class="mt-5 mt-csm-0">
+              <h2>
+                Study and Live
+              </h2>
+            </div>
+            <ul class="no-bullet ps-0">
+              <li>
+                <a href="">
+                  Degrees / Majors
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  Colleges and Departments
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  Library
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  Events Calendar
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  Arts and Entertainment
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  Fitness and Recreation
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  Campus and Beyond
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-csm-6 col-clg-3 d-flex flex-column">
+            <div class="mt-5 mt-clg-0">
+              <h2>
+                Campus Info
+              </h2>
+            </div>
+            <ul class="no-bullet ps-0">
+              <li>
+                <a href="">
+                  About Michigan Tech
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  Accreditation
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  Athletics
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  Campus Map
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  Campus Directory
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  Jobs at Michigan Tech
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  Webcams
+                </a>
+              </li>
+            </ul>
+          </div>
+            
+          <div class="col-12 col-csm-6 col-clg-3 d-flex flex-column">
+            <div class="mt-5 mt-clg-0">
+              <h2>
+                Policies and Safety
+              </h2>
+            </div>
+            <ul class="no-bullet ps-0">
+              <li>
+                <a href="">
+                  Campus Safety Information
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  Emergency Contact Information
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  Report a Concern
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  Public Safety / Police Servicesr
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  Student Disclosures
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  Title IX
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  University Policies
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Contact -->
+        <div class="row mx-0">
+          <div class="text-clg-end my-3 text-white">
+            <h2 class="fw-semibold">
+              Michigan Technological University
+            </h2>
+            <div style="font-size: 14px;">
+              1400 Townsend Drive, Houghton, Michigan 49931-1295
+            </div>
+            <div style="font-size: 14px;">
+              <ul class="d-block d-md-inline-flex p-0 my-1">
+                <li class="mb-3 mb-md-0">
+                  Ph: 
+                  <a href="tel:9064871885" class="text-white">
+                    906-487-1885
+                  </a>
+                </li>
+                <li class="gold-separator mb-3 mb-md-0">
+                  Toll-free: 
+                  <a href="tel:8886881885" class="text-white">
+                    888-688-1885
+                  </a>
+                </li>
+                <li class="gold-separator">
+                  <a href="mailto:mtu4u@mtu.edu" class="text-white">
+                    mtu4u@mtu.edu
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row align-items-center mx-0 p-xxl-0">
+            <div class="col-12 col-csm-6 col-cmd-4 col-xlg-2 p-0 mb-5 mb-xl-0">
+              <a href="/" data-linked-image="true">
+                <img src="//www.mtu.edu/mtu_resources/images/logos/michigan-tech-logo-fullname-solid-old.svg" height="100" width="200" alt="Michigan Technological University" loading="lazy">
+              </a>
+            </div>
+            <div class="col-12 col-csm-6 col-cmd-4 col-xlg-2 d-csm-flex justify-content-end p-0 mb-5 mb-xl-0">
+              <a href="https://www.mtu.edu/stratplan/dashboard/section-245/" data-linked-image="true">
+                <img src="https://www.mtu.edu/mtu_resources/images/n/transp-reporting-logo.svg" loading="lazy" height="150" width="150" alt="Transparent Reporting Budget and Salary/Compensation">
+              </a>
+            </div>
+            <div class="col-12 col-cmd-4 col-xlg-2 d-cmd-flex justify-content-end p-0 mb-5 mb-xl-0">
+              <a href="http://www.orau.org/" data-linked-image="true" target="_blank" rel="noopener">
+                <img src="https://www.mtu.edu/mtu_resources/images/n/orau-logo-white.svg" loading="lazy" height="42" width="150" alt="Oak Ridge Associated Universities">
+              </a>
+            </div>
+            <!-- socials -->
+            <div class="col-12 col-xlg-6 mb-md-0 mt-md-2 p-0">
+              <ul class="social-icons d-flex align-items-center m-0 p-0 justify-content-center justify-content-cmd-start justify-content-xlg-end flex-wrap">
+                <li class="d-flex my-3 me-3">
+                  <a href="" class="bg-primary rounded-circle">
+                    <object data="images\facebook.svg" class="icon" width="25" height="25"> </object>
+                  </a>
+                </li> 
+                <li class="d-flex my-3 me-3">
+                  <a href="" class="bg-twitterblue rounded-circle">
+                    <object data="images\twitter.svg" class="icon" width="25" height="25"> </object>
+                  </a>
+                </li> 
+                <li class="d-flex my-3 me-3">
+                  <a href="" class="bg-instapink rounded-circle">
+                    <object data="images\instagram.svg" class="icon" width="25" height="25"> </object>
+                  </a>
+                </li> 
+                <li class="d-flex my-3 me-3">
+                  <a href="" class="bg-linkedteal rounded-circle">
+                    <object data="images\linkedin.svg" class="icon" width="25" height="25"> </object>
+                  </a>
+                </li> 
+                <li class="d-flex my-3 me-3">
+                  <a href="" class="bg-youred rounded-circle">
+                    <object data="images\youtube.svg" class="icon" width="25" height="25"> </object>
+                  </a>
+                </li> 
+                <li class="d-flex my-3 me-3">
+                  <a href="" class="bg-flickrred rounded-circle">
+                    <object data="images\flickr.svg" class="icon" width="25" height="25"> </object>
+                  </a>
+                </li> 
+                <li class="d-flex my-3 me-3">
+                  <a href="" class="bg-tiktokblack rounded-circle">
+                    <object data="images\tiktok.svg" class="icon" width="25" height="25"> </object>
+                  </a>
+                </li> 
+                <li class="d-flex my-3 me-3">
+                  <a href="" class="bg-pinred rounded-circle">
+                    <object data="images\pinterest.svg" class="icon" width="25" height="25"> </object>
+                  </a>
+                </li> 
+                <li class="d-flex my-3">
+                  <a href="" class="bg-snapyellow rounded-circle">
+                    <object data="images\snapchat.svg" class="icon" width="25" height="25"> </object>
+                  </a>
+                </li> 
+              </ul>
+            </div>             
+          </div>
+        </div>
+        <hr class="text-white mt-4">
+        <div class="row d-flex justify-content-between p-0 mx-0">
+          <div class="col-12 col-clg-5 text-center text-clg-start" style="font-size: 11.9px;">
+            <ul class="d-inline-flex p-0">
+              <li class="bar-separator">
+                <a href="" class="text-white">
+                  Accessibility
+                </a>
+              </li>
+              <li class="bar-separator">
+                <a href="" class="text-white">
+                  Equal Opportunity
+                </a>
+              </li>
+              <li>
+                <a href="" class="text-white">
+                  Webmaster
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-clg-7 text-center text-clg-end footnote" style="font-size: 14px;">
+            <ul class="d-block d-cmd-inline-flex p-0">
+              <li>
+                <a href="" class="text-white">
+                  <strong>
+                    Tomorrow Needs Michigan Tech
+                  </strong>
+                </a>
+              </li>
+              <li class="gold-separator text-white p-2 p-cmd-0">
+                © 2023 Michigan Technological University
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script>
+      let searchCont = document.getElementById('search-cont');
+      let hideBtn = document.getElementById('hidebtn')
+      let mainNav = document.getElementById('main-navcont');
+      let isShow = true;
+      var display = 0;
+      function hideSearch()
+      {
+        if(isShow) {
+          searchCont.style.display = 'none';
+          mainNav.style.display = 'flex';
+          hideBtn.style.display = 'block';
+          isShow = false;
+        } 
+        else {
+          searchCont.style.display = 'flex';
+          mainNav.style.display = 'none';
+          hideBtn.style.display = 'none';
+          isShow = true;
+        }
+      }
+
+      const scrollBtn = document.querySelector(".btn");
+      const btnVisibility = () => {
+        if (window.scrollY > 400) {
+            scrollBtn.style.visibility = "visible";
+        } else {
+            scrollBtn.style.visibility = "hidden";
+        }
+      };
+      document.addEventListener("scroll", () => {
+      btnVisibility();
+      });
+      scrollBtn.addEventListener("click", () => {
+      window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      });
+    </script>
+  </body>
+</html>
